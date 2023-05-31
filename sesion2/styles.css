@@ -1,0 +1,87 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Selector de elemento */
+h1 {
+ /* Aqui van las reglas */
+ color:hotpink;
+}
+
+p {
+    color: blueviolet;
+}
+
+span {
+    color: rgb(75, 151, 75);
+}
+
+span {
+    color: rgb(87, 108, 123);
+}
+
+span {
+    color: rgb(94, 48, 48);
+}
+
+#name {
+    color: red;
+}
+
+#lastName {
+    color: purple;
+}
+
+.mybox {
+    background-color: aqua;
+    width: 50%;
+    height: 90px;
+}
+
+#superId {
+    background-color: rgb(182, 23, 199);
+    width: 90px;
+    height: 90px;
+}
+
+.mytext {
+    font-size: 22px;
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+.parent__container {
+    width: 100%;
+}
+
+header {
+    width: 100vw;
+    background-color: green;
+}
+
+.main__container {
+    width: 190px;
+    height: 100vh;
+    background-color: red;
+    padding: 10px;
+}
+
+.article__container {
+    background-color: #ffff;
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: content-box;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.classic__box {
+    width: 90px;
+    height: 90px;
+    background-color: blueviolet;
+    border:3px dotted yellow;
+    box-sizing: content-box;
+}
