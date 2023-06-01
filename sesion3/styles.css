@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: aqua;
+    padding: 10px;
+}
+
+#nav {
+    background-color: blueviolet;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.nav__text--blue {
+    margin-left: 10px;
+    color: blue;
+}
+
+.nav__text--green {
+    color: green;
+}
+
+.aside__navigation {
+    display: inline-block;
+    background-color: orange;
+    height: 250px;
+    width: 30%;
+}
+
+.main__container {
+    width: 38%;
+    height: 250px;
+    background-color: red;
+    display: inline-block;
+}
+
+.footer__container {
+    background-color: purple;
+    height: 90px;
+}
+
+p, span, div {
+    color: hotpink;
+}
+
+.welcome__text, .welcome__description {
+    color: red;
+}
+
+.prices__container > p {
+    font-weight: bold;
+}
+
+.prices__container > p > .prices__discount--red {
+    color: red;
+}
+
+.buttons__ecommerce {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.buttons__container > .buttons__add {
+    background-color: yellow;
+
+}
+
+.buttons__container > .buttons__buy {
+    background-color: green;
+}
+
+.buttons__ecommerce:hover {
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.buttons__ecommerce[type*="button"]:hover, .buttons__ecommerce[type*="submit"]:hover{
+    color: white;
+}
+
+.login__container > input[type*="password"] {
+    color: hotpink;
+}
+    
+/* .buttons__ecommerce[type*="submit"]:hover{
+    color: white;
+} */
