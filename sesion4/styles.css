@@ -1,0 +1,44 @@
+.main__title {
+    color: hotpink;
+}
+
+.position__container > .position__box{
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.position__box--green {
+    background-color: green;
+    position: static;
+}
+
+.position__box--red {
+    background-color: red;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.position__box--blue {
+    background-color: blue;
+    position:absolute;
+    top: 10px;
+}
+
+.position__box--hot-pink {
+    background-color: hotpink;
+    position: sticky;
+    top: 0px;
+}
+
+.position__container > .position__box:hover{
+    background-color: yellow;
+    color: red;
+}
+
+.position__box--purple {
+    background-color: purple;
+    position: fixed;
+}
