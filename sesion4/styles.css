@@ -42,3 +42,43 @@
     background-color: purple;
     position: fixed;
 }
+
+.z-index__image {
+    position: absolute;
+    z-index: -10;
+    top: 10px;
+    left: 10px;
+}
+
+.z-index__button {
+    position: absolute;
+    z-index: -11;
+}
+
+.animation__button {
+    width: 160px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.animation__button:hover {
+    animation-name: rainbow;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: blue;
+        color: aqua;
+    }
+    25% {background-color: red;}
+    50% {background-color: orange;}
+    75% {background-color: green;}
+    100% {background-color: purple;}
+}
