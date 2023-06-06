@@ -69,16 +69,33 @@
 .animation__button:hover {
     animation-name: rainbow;
     animation-iteration-count: infinite;
-    animation-duration: 1s;
+    animation-duration: 5s;
 }
 
 @keyframes rainbow {
     0% {
         background-color: blue;
         color: aqua;
+        transform: rotate(90deg);
     }
-    25% {background-color: red;}
-    50% {background-color: orange;}
-    75% {background-color: green;}
-    100% {background-color: purple;}
+    25% {background-color: red;
+        transform: rotate(180deg);
+    }
+    50% {background-color: orange;
+        transform: rotate(270deg);
+    }
+    75% {background-color: green;
+        transform: rotate(360deg);}
+    100% {background-color: purple;
+        transform: rotate(90deg);
+    }
+}
+
+.transform__container {
+    width: 180px;
+    height: 90px;
+    background-color: hotpink;
+    transform: translate(50px, 100px);
+    transform: rotate(20deg);
+    transform: scale(2, 3);
 }
