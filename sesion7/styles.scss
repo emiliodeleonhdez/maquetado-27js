@@ -1,0 +1,81 @@
+@import "vars";
+
+@mixin standard__box() {
+    width: 110px;
+    height: 110px;
+    margin: 10px;
+    background-color: rgb(23, 165, 78);
+    border: 3px solid rgb(117, 0, 128);
+}
+
+@mixin codemia__buttons($button-color){
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: $button-color;
+}
+
+@mixin fixed__button($button-width: 110px, $button-color:blue) {
+    width: $button-width;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: $button-color;
+}
+
+.main__title {
+    color: $primary-color;
+}
+
+.secondary__title {
+    color: $primary-color;
+}
+
+.description__text {
+    font-family: $primary-font;
+    color: $secondary-color;
+}
+
+.flex__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .flex__item {
+        width: 110px;
+        height: 110px;
+        margin: 10px;
+        background-color: $primary-color;
+        border: 3px dotted $secondary-color;
+        > span {
+            color: white;
+        }
+    }
+}
+
+.simple__box {
+    @include standard__box();
+}
+
+.info__container {
+    @include standard__box();
+}
+
+.login__button {
+    @include codemia__buttons($button-color: hotpink)
+}
+
+.subscription__button {
+    @include codemia__buttons($button-color: green)
+}
+
+.about-us__button {
+    @include fixed__button($button-width: 200px);
+}
+
+.mentor___button {
+    @include fixed__button($button-color: green);
+    &:hover{
+        background-color: $primary-color;
+    }
+}
